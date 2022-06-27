@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabeçalo */
+header{
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    box-shadow: 0 0 10px 2px rgb(101, 100, 100);
+}
+.logo{
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu{
+    position: absolute;
+    right: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #424242;
+}
+.menu-principal{
+    list-style: none;
+}
+.menu-principal-item{
+    padding: 20px;
+    display: inline;
+}
+.menu-principal-item a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Principal */
+main{
+    position: relative;
+    z-index: 1;
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    top: 80px;
+    margin-bottom: 100px;
+    box-shadow: 0 0 10px 2px rgba(160, 160, 160, 0.627);
+    transition: 2s;
+}
+.principal{
+    position: relative; 
+    background-color: #2196f3;
+    background-image: url("../img/sp_main_bg.png");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+}
+.principal-foto{
+    position: absolute;
+    width: 300px;
+    border-radius: 100%;
+    top: 15%;
+    left: 5%;
+    transition: 1s;
+}
+.principal-foto:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px black;
+    top: 10%;
+    transition: 1s;
+}
+.principal-nome{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(100%, -50%);
+    text-align: center;
+    color: white;
+}
+.principal-nome-titulo{
+    font-size: 50px;
+}
+.principal-nome-subtitulo{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 20px;
+}
+.principal-redes ul li{
+    list-style: none;
+    display: inline;
+}
+.principal-redes-item{
+    width: 30px;
+
+}
+
+/* Secundário */
+
+.secundario{
+    width: 90%;
+    margin: 50px auto;
+}
+.secundario-sobreMim{
+    width: 50%;
+    text-align: justify;
+    float: left;
+}
+.secundario-sobreMim p{
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.secundario-questionario{
+    width: 50%;
+    float: right;
+    font-size: 15px;
+    overflow-x: auto;
+}
+.secundario-questionario-conteiner{
+    width: 400px;
+}
+.secundario-questionario-pergunta{
+    width: 40%;
+}
+.secundario-pergunta{
+    width: 100%;
+    list-style: none;
+    float: left;
+}
+.secundario-pergunta-item{
+    padding-bottom: 20px;
+}
+.secundario-resposta{
+    list-style: none;
+    color: rgb(94, 94, 94);
+}
+.secundario-resposta-item{
+    padding-bottom: 20px;
+}
+
+/* Footer */
+footer{
+    position: static;
+    text-align: center;
+    z-index: 3;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+}
+h4{
+    /* position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%); */
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(90, 90, 90);
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 950px){
+    header{
+        background-color: #2196f3;
+        color: white;
+        height: 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .secundario-sobreMim{
+        clear: left;
+    }
+}
+@media screen and (max-width: 750px){
+    main{
+        width: 99%;
+        transition: 2s;
+    }
+    .principal{
+        height: 700px;
+        align-items: center;
+    }
+    .principal-foto{
+        border-radius: 100%;
+        transition: 1s;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .principal-nome{
+        top: 80%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        text-align: center;
+        color: white;
+    }
+
+    .secundario-sobreMim{
+        width: 100%;
+        text-align: justify;
+    }
+    .secundario-sobreMim h3{
+        text-align: center;
+    }
+    .secundario-sobreMim p{
+        margin: 15px auto 50px;
+    }
+    .secundario-questionario{
+        width: 70%;
+        font-size: 15px;
+        overflow-x: auto;
+        float: none;
+        margin: auto;
+    }
+}
+
+
+
+/* Animações */
+
+/* @keyframes foto-animacao {
+    from{
+        top: 15%;
+    }
+    to{
+        top: 10%;
+    }
+} */
