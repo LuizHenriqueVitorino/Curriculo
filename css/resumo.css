@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabeçalo */
+header{
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    box-shadow: 0 0 10px 2px rgb(101, 100, 100);
+}
+.logo{
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu{
+    position: absolute;
+    right: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #424242;
+}
+.menu-principal{
+    list-style: none;
+}
+.menu-principal-item{
+    padding: 20px;
+    display: inline;
+}
+#selecionado{
+    border-bottom: #2196f3 solid;
+}
+.menu-principal-item a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Principal */
+main{
+    position: relative;
+    z-index: 1;
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    top: 80px;
+    margin-bottom: 100px;
+    box-shadow: 0 0 10px 2px rgba(160, 160, 160, 0.627);
+    transition: 2s;
+}
+.principal{
+    position: relative; 
+    background-color: #2196f3;
+    background-image: url("../img/sp_main_bg.png");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+}
+.principal-foto{
+    position: absolute;
+    width: 300px;
+    border-radius: 100%;
+    top: 15%;
+    left: 5%;
+    transition: 1s;
+}
+.principal-foto:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px black;
+    top: 10%;
+    transition: 1s;
+}
+.principal-nome{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(100%, -50%);
+    text-align: center;
+    color: white;
+}
+.principal-nome-titulo{
+    font-size: 50px;
+}
+.principal-nome-subtitulo{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 20px;
+}
+.principal-redes ul li{
+    list-style: none;
+    display: inline;
+}
+.principal-redes-item{
+    width: 30px;
+
+}
