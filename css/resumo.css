@@ -57,49 +57,30 @@ main{
     box-shadow: 0 0 10px 2px rgba(160, 160, 160, 0.627);
     transition: 2s;
 }
-.principal{
-    position: relative; 
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     background-color: #2196f3;
     background-image: url("../img/sp_main_bg.png");
     background-size: cover;
     background-position: center center;
-    height: 300px;
+    height: 130px;
 }
-.principal-foto{
-    position: absolute;
-    width: 300px;
-    border-radius: 100%;
-    top: 15%;
-    left: 5%;
-    transition: 1s;
-}
-.principal-foto:hover{
-    cursor: pointer;
-    box-shadow: 0 0 20px black;
-    top: 10%;
-    transition: 1s;
-}
-.principal-nome{
-    position: absolute;
-    right: 50%;
-    top: 50%;
-    transform: translate(100%, -50%);
-    text-align: center;
-    color: white;
-}
-.principal-nome-titulo{
+h1{
     font-size: 50px;
 }
-.principal-nome-subtitulo{
-    font-size: 20px;
-    font-weight: normal;
-    margin: 20px;
+.corpo{
+    margin: 50px;
 }
-.principal-redes ul li{
-    list-style: none;
-    display: inline;
+.educacao{
+    display: flex;
+    flex: left;
+    width: 50%;
 }
-.principal-redes-item{
-    width: 30px;
-
+.experiencia{
+    display: flex;
+    flex: right;
+    width: 50%;
 }
