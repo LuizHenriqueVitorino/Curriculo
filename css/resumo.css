@@ -72,15 +72,41 @@ h1{
     font-size: 50px;
 }
 .corpo{
+    display: flex;
+    flex-direction: row;
     margin: 50px;
+    
 }
-.educacao{
-    display: flex;
-    flex: left;
+.educacao, .experiencia{
     width: 50%;
 }
-.experiencia{
-    display: flex;
-    flex: right;
-    width: 50%;
+.titulo{
+    font-size: 20px;
 }
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-left: #c4c2c2 solid 2px;
+    align-items: center;
+}
+.item{
+    display: flexbox;
+    width: 90%;
+    height: 100px;
+    padding: 15px 0 15px 15px;
+    margin-top: 30px;
+    border-left: #2196f3 solid 2px;
+    box-shadow: 0 0 5px rgb(177, 175, 175);
+    align-items: center;
+    overflow: auto;
+}
+.item-titulo{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.item-descricao{
+    font-size: 15px;
+}
+
+
