@@ -36,6 +36,9 @@ header{
     padding: 20px;
     display: inline;
 }
+#selecionado{
+    border-bottom: #2196f3 solid;
+}
 .menu-principal-item a{
     text-decoration: none;
     color: black;
