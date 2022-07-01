@@ -74,8 +74,7 @@ h1{
 .corpo{
     display: flex;
     flex-direction: row;
-    margin: 50px;
-    
+    margin: 50px; 
 }
 .educacao, .experiencia{
     width: 50%;
@@ -88,8 +87,8 @@ h1{
     flex-direction: column;
     height: 100%;
     margin-top: 20px;
+    padding: 0 10px;
     border-left: #c4c2c2 solid 2px;
-    align-items: center;
 }
 .item{
     display: flexbox;
@@ -99,7 +98,6 @@ h1{
     margin-top: 30px;
     border-left: #2196f3 solid 2px;
     box-shadow: 0 0 5px rgb(177, 175, 175);
-    align-items: center;
     overflow: auto;
 }
 .item-titulo{
@@ -144,3 +142,41 @@ h4{
     color: rgb(90, 90, 90);
 }
 
+@media screen and (max-width: 880px) {
+    header{
+        background-color: #2196f3;
+        color: white;
+        height: 50px;
+    }
+    .menu{
+        display: none;
+    }
+    main{
+        width: 95%;
+    }
+    .corpo{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .educacao, .experiencia{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .cabecalho{
+        height: 90px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .corpo{
+        margin: 0 10px; 
+    }
+    .conteiner{
+        border: none;
+    }
+
+}
